@@ -1,11 +1,10 @@
 import React from "react";
-
+import { Image } from "react-bootstrap";
 import {
   Section,
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
 
 import Typist from "react-typist";
@@ -32,9 +31,19 @@ const Hero = (props) => (
         </FadeIn>
       </SectionText>
       <SectionText />
-      <Button onClick={() => (window.location = "https://google.com")}>
-        Learn More
-      </Button>
+      <FadeIn transitionDuration="1000">
+        <Image
+          width="60%"
+          src="/images/profile-pic1.jpg"
+          roundedCircle
+          fluid
+          style={{
+            animation: "float 4s ease-in-out infinite",
+          }}
+        />
+      </FadeIn>
+      <br />
+      <br />
     </LeftSection>
   </Section>
 );

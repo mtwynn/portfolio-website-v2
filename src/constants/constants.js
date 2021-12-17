@@ -54,11 +54,11 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  { year: "June 2018", text: "Learned Javascript and built first projects" },
+  { year: "March 2019", text: "Worked as front-end developer for university IT department" },
+  { year: "June 2019", text: "Developed full-stack iOS app for small real estate centered start-up" },
+  { year: "November 2019", text: "Created an IoT trash-recycling solution powered by Google Vision AI with team of students" },
+  { year: "June 2020", text: "Accepted current software engineering position" },
 ];
 
 export const TagMap = {
@@ -107,7 +107,7 @@ export const TagMap = {
   Heroku: (
     <>
       <HerokuIcon />
-      <Tag style={{ color: "#FDA50E" }}>Heroku</Tag>
+      <Tag style={{ color: "#7A54BC" }}>Heroku</Tag>
     </>
   ),
   Firebase: (

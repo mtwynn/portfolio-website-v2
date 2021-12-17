@@ -38,12 +38,12 @@ const Header = () => (
       </li>
       <li>
         <Link href="#tech">
-          <NavLink>Technologies</NavLink>
+          <NavLink>Skills</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#tech">
-          <NavLink>Resume</NavLink>
+        <Link href="https://drive.google.com/file/d/1pYAfcT1uJ45gKifKoJfYFe_h4ukxBsDd/view">
+          <NavLink target="_blank" href="https://drive.google.com/file/d/1pYAfcT1uJ45gKifKoJfYFe_h4ukxBsDd/view" style={{ color: "#fff"}}>Resume</NavLink>
         </Link>
       </li>
       <li>
@@ -51,16 +51,18 @@ const Header = () => (
           <NavLink>About</NavLink>
         </Link>
       </li>
+      <li>
+        <Link href="#contact">
+          <NavLink>Contact</NavLink>
+        </Link>
+      </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com/mtwynn">
+      <SocialIcons target="_blank" href="https://github.com/mtwynn">
         <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/mtam-nguyen/">
+      <SocialIcons target="_blank" href="https://www.linkedin.com/in/mtam-nguyen/">
         <AiFillLinkedin size="3rem" />
-      </SocialIcons>
-      <SocialIcons href="https://instagram.com">
-        <AiFillInstagram size="3rem" />
       </SocialIcons>
     </Div3>
   </Container>

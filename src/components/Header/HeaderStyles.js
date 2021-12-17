@@ -8,6 +8,13 @@ export const Container = styled.div`
   grid-column-gap: 2rem;
   padding: 1rem;
   padding-top: 2rem;
+  background-color: #0F1624;
+  opacity: 1;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -37,11 +44,15 @@ export const Div2 = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
+
+  @media ${(props) => props.theme.breakpoints.sm - 100} {
+    display: none;
+  }
 `;
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
