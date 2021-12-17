@@ -16,8 +16,8 @@ const ReactIcon = () => {
         y2="36.722"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#6dc7ff" />
-        <stop offset="1" stop-color="#e6abff" />
+        <stop offset="0" stopColor="#6dc7ff" />
+        <stop offset="1" stopColor="#e6abff" />
       </linearGradient>
       <circle cx="32" cy="32" r="6" fill="url(#9GkdZLxQa1XTDblOFwLcpa)" />
       <linearGradient
@@ -28,8 +28,8 @@ const ReactIcon = () => {
         y2="53.44"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#1a6dff" />
-        <stop offset="1" stop-color="#c822ff" />
+        <stop offset="0" stopColor="#1a6dff" />
+        <stop offset="1" stopColor="#c822ff" />
       </linearGradient>
       <path
         fill="url(#9GkdZLxQa1XTDblOFwLcpb)"

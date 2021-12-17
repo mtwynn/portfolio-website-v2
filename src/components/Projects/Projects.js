@@ -1,9 +1,9 @@
 import React from "react";
+import { styled } from "@mui/material/styles";
 
 import {
   BlogCard,
   CardInfo,
-  ExternalLinks,
   GridContainer,
   HeaderThree,
   Hr,
@@ -13,12 +13,21 @@ import {
   UtilityList,
   Img,
 } from "./ProjectsStyles";
+
+import { Button } from "@mui/material";
+
+import { Code, Visibility } from "@mui/icons-material";
 import {
   Section,
   SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { projects, TagMap } from "../../constants/constants";
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.primary.light,
+  fontWeight: 900,
+}));
 
 const Projects = () => (
   <Section nopadding id="projects">
@@ -30,9 +39,7 @@ const Projects = () => (
           <BlogCard key={id}>
             <Img src={image} />
             <TitleContent>
-              <HeaderThree title={title}>
-                {title}
-              </HeaderThree>
+              <HeaderThree title={title}>{title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo>{description}</CardInfo>
@@ -40,20 +47,39 @@ const Projects = () => (
               <TagList>
                 {tags.map((tag, i) => (
                   <div
+                    key={i}
                     style={{
                       display: "flex",
                       flexDirection: "column",
                       alignItems: "center",
                     }}
                   >
-                    <Tag key={i}>{TagMap[tag]}</Tag>
+                    <Tag>{TagMap[tag]}</Tag>
                   </div>
                 ))}
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={visit}>Code</ExternalLinks>
-              <ExternalLinks href={source}>Source</ExternalLinks>
+              <ColorButton
+                size="large"
+                href={source}
+                target="_blank"
+                variant="outlined"
+                startIcon={<Code />}
+              >
+                Code
+              </ColorButton>
+              {visit &&
+              <ColorButton
+                size="large"
+                href={visit}
+                target="_blank"
+                variant="outlined"
+                startIcon={<Visibility />}
+              >
+                Demo
+              </ColorButton>
+              }
             </UtilityList>
           </BlogCard>
         )

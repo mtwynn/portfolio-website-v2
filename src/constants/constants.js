@@ -3,10 +3,17 @@ import ReactIcon from "../../src/icons/ReactIcon";
 import MuiIcon from "../../src/icons/MuiIcon";
 import NodeJsIcon from "../../src/icons/NodeJsIcon";
 import ExpressJsIcon from "../../src/icons/ExpressJsIcon";
+import JavaIcon from "../icons/JavaIcon";
+import PythonIcon from "../icons/PythonIcon";
+import FirebaseIcon from "../icons/FirebaseIcon";
+import SwiftIcon from "../icons/SwiftIcon";
+import HerokuIcon from "../icons/HerokuIcon";
+import ParseIcon from "../icons/ParseIcon";
+import { Icons } from "../icons/IconStyles";
 
 export const projects = [
   {
-    title: <span style={{ color: "#1ed760" }}>KeyTrack</span>,
+    title: <span style={{ color: "#1ED760" }}>KeyTrack</span>,
     description:
       "Helps artists organize and manage a list of their Spotify music, as well as help them search for and determine music qualities such as tempo and key.",
     image: "/images/keytrack.png",
@@ -16,33 +23,32 @@ export const projects = [
     id: 0,
   },
   {
-    title: "E-Commerce",
+    title: "SmartCycle",
     description:
-      "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-    image: "/images/2.png",
-    tags: ["React", "JavaScript"],
-    source: "https://google.com",
-    visit: "https://google.com",
+      'An IoT "smart" trashcan that is capable of sorting and distinguishing between mixed recycling and landfill products.',
+    image: "/images/smartcycle.png",
+    tags: ["Java", "Python", "Firebase"],
+    source: "https://github.com/mtwynn/SmartCycle",
     id: 1,
   },
   {
-    title: "WebRTC App",
+    title: <span style={{ color: "#FC4639"}}>AugmaAR</span>,
     description:
-      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-    image: "/images/3.jpg",
-    tags: ["React", "WebRTC"],
-    source: "https://google.com",
-    visit: "https://google.com",
+      "An artwork marketplace where users can preview a picture or painting on their own wall using AR.",
+    image: "/images/augma.png",
+    tags: ["Swift", "Heroku", "Parse"],
+    source: "https://github.com/mtwynn/AugmaAR",
+    visit: "https://github.com/mtwynn/AugmaAR",
     id: 2,
   },
   {
-    title: "Unichat",
+    title: <span style={{ color: "#009745"}}>SmartRES</span>,
     description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: "/images/4.jpg",
-    tags: ["React", "ChatEngine", "Firebase"],
-    source: "https://google.com",
-    visit: "https://google.com",
+      "An IoT solution for real estate agents to replace traditional painted real estate signs with wireless, digital signs.",
+    image: "/images/smartres.png",
+    tags: ["Swift", "Heroku", "Firebase"],
+    source: "https://github.com/mtwynn/SmartRES",
+    visit: "https://github.com/mtwynn/SmartRES",
     id: 3,
   },
 ];
@@ -77,7 +83,43 @@ export const TagMap = {
   Express: (
     <>
       <ExpressJsIcon />
-      <Tag style={{ color: "#fff" }}>ExpressJS</Tag>
+      <Tag style={{ color: "#FFFFFF" }}>ExpressJS</Tag>
+    </>
+  ),
+  Java: (
+    <>
+      <JavaIcon />
+      <Tag style={{ color: "#E86F00" }}>Java</Tag>
+    </>
+  ),
+  Python: (
+    <>
+      <PythonIcon />
+      <Tag style={{ color: "#F7D246" }}>Python</Tag>
+    </>
+  ),
+  Swift: (
+    <>
+      <SwiftIcon />
+      <Tag style={{ color: "#FDA50E" }}>Swift</Tag>
+    </>
+  ),
+  Heroku: (
+    <>
+      <HerokuIcon />
+      <Tag style={{ color: "#FDA50E" }}>Heroku</Tag>
+    </>
+  ),
+  Firebase: (
+    <>
+      <FirebaseIcon />
+      <Tag style={{ color: "#FDA50E" }}>Firebase</Tag>
+    </>
+  ),
+  Parse: (
+    <>
+      <ParseIcon />
+      <Tag style={{ color: "#169CEE" }}>Parse</Tag>
     </>
   ),
 };
