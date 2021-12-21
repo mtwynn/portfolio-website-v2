@@ -1,3 +1,3 @@
 ## Personal Portfolio
 
-![Portfolio Website](https://m-tnguyen.com/)
+Portfolio Website: https://m-tnguyen.com/
