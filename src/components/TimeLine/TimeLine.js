@@ -49,6 +49,7 @@ const Timeline = () => {
     <Section id="about">
       <SectionDivider />
       <br />
+      <br />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
         I began programming in 2016, and have since acquired skills spanning multiple areas of development!

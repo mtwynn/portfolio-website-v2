@@ -7,11 +7,6 @@ import Technologies from "../components/Technologies/Technologies";
 import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
-
-import IconButton from "@mui/material/IconButton";
-import Drawer from "@mui/material/Drawer";
-import MenuIcon from "@mui/icons-material/Menu";
-
 import FadeIn from "react-fade-in";
 
 const Home = () => {

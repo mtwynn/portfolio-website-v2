@@ -18,6 +18,7 @@ const Technologies = () => (
   <Section id="tech">
     <SectionDivider />
     <br />
+    <br />
     <SectionTitle>Skills and Technologies</SectionTitle>
     <SectionText>
       Experienced in web development and mobile development technologies.
@@ -49,7 +50,7 @@ const Technologies = () => (
         <DiIllustrator size="4rem" />
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
-          {['Axure RP', 'Adobe XD (upcoming)', 'Adobe Photoshop (upcoming)', 'Adobe Illustrator (upcoming)', 'Adobe InDesign (upcoming)'].map((skill) => (
+          {['Axure RP'].map((skill) => (
             <ListParagraph>
             {skill}
           </ListParagraph>

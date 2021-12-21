@@ -34,7 +34,7 @@ const Hero = (props) => (
       <FadeIn transitionDuration="1000">
         <Image
           width="60%"
-          src="/images/profile-pic1.jpg"
+          src="/images/profile-pic.jpg"
           roundedCircle
           fluid
           style={{
