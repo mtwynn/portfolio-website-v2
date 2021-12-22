@@ -33,23 +33,31 @@ export const Layout = ({ children }) => {
   const handleClose = () => {
     setOpen(false);
   };
-  
+
   useEffect(() => {
     // Scales PDF based on window size
-    if (typeof window !== 'undefined') {
-      window.addEventListener('resize', function(event) {
-        let scaleToSet = window.screen.width/660;
-        if (scaleToSet > 2) {
-          scaleToSet = 2;
-        }
-        setScale(scaleToSet);
-    }, true)
+    if (typeof window !== "undefined") {
+      window.addEventListener(
+        "resize",
+        function (event) {
+          let scaleToSet = window.screen.width / 660;
+          if (scaleToSet > 2) {
+            scaleToSet = 2;
+          }
+          setScale(scaleToSet);
+        },
+        true
+      );
     }
-  })
+  });
 
   return (
     <Container>
-      <Header handleOpenResume={handleClickOpen} handleCloseResume={handleClose}/>
+      <title>Tam Nguyen</title>
+      <Header
+        handleOpenResume={handleClickOpen}
+        handleCloseResume={handleClose}
+      />
       <main>{children}</main>
       <Footer />
       <Dialog
@@ -84,7 +92,12 @@ export const Layout = ({ children }) => {
             backgroundColor: "#0F1624",
           }}
         >
-          <Button autoFocus size="large" startIcon={<DownloadIcon />} style={{color: "white", outline: "none"}}>
+          <Button
+            autoFocus
+            size="large"
+            startIcon={<DownloadIcon />}
+            style={{ color: "white", outline: "none" }}
+          >
             <a
               href="resources/resume.pdf"
               download
@@ -93,7 +106,12 @@ export const Layout = ({ children }) => {
               Download
             </a>
           </Button>
-          <Button size="large" onClick={handleClose} startIcon={<CloseIcon />} style={{color: "white", outline: "none"}}>
+          <Button
+            size="large"
+            onClick={handleClose}
+            startIcon={<CloseIcon />}
+            style={{ color: "white", outline: "none" }}
+          >
             Close
           </Button>
         </DialogActions>
